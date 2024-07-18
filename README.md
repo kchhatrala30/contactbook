@@ -8,3 +8,5 @@ Instructions to run this project:
 6. Open the "contacts.txt" file after you have stopped the program via Ctrl+C to see all the contacts in the list at the time the program stopped running
 
 Enjoy your new contacts list program!
+
+This project originally began as a course project for a class.
