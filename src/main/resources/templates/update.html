@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Update Contact</title>
+</head>
+<body>
+    <h2 class="center">Update a Contact</h2>
+    <form th:action="@{/update/{id}(id=${contact.id})}" th:object="${contact}" method="POST">
+        <label>First name</label><br>
+        <input type="text" th:field="*{firstName}" required><br>
+
+        <label>Last name</label><br>
+        <input type="text" th:field="*{lastName}" required><br>
+
+        <label>Phone number</label><br>
+        <input type="text" th:field="*{phoneNum}" required><br>
+
+        <label>Email</label><br>
+        <input type="text" th:field="*{email}" required><br>
+
+        <label>Address</label><br>
+        <input type="text" th:field="*{address}" required><br>
+
+        <button type="submit">Update Contact</button>
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <a href="/">Return Home</a>
+</body>
+</html>
